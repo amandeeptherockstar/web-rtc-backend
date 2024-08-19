@@ -32,6 +32,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 server.listen(2000, () => {
   console.log("listening on *:2000");
 });
